@@ -62,12 +62,7 @@ struct ClubsView: View {
             }
             .padding()
             .navigationBarTitle("", displayMode: .inline)
-            .navigationBarItems(leading: Button(action: {
-                // Action to go back
-            }) {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(.blue)
-            }, trailing: NavigationLink(destination: ProfileView(userProfile: sampleProfiles[0])) {
+            .navigationBarItems(trailing: NavigationLink(destination: ProfileView(userProfile: sampleProfiles[0])) {
                 Image(systemName: "person.crop.circle")
                     .resizable()
                     .frame(width: 30, height: 30)
