@@ -31,14 +31,6 @@ struct RunningMatchView: View {
                 }
                 .navigationBarTitle("Running Matches")
                 
-                NavigationLink(destination: RunningMatchFormView(matches: $matches)) {
-                    Text("Add Running Preferences")
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding()
-                }
             }
         }
     }
@@ -46,6 +38,6 @@ struct RunningMatchView: View {
 
 struct RunningMatchView_Previews: PreviewProvider {
     static var previews: some View {
-        MatchView()
+        RunningMatchView()
     }
 }

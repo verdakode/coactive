@@ -13,4 +13,5 @@ struct RunningMatch: Identifiable {
     var preferredPace: String
     var timeIWantToRunAt: String
     var distanceWantingToRun: String
+    var sharedConnection: String
 }

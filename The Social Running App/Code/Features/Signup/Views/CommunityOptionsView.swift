@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct CommunityOptionsView: View {
+    
     var body: some View {
         VStack {
             Text("Choose Your Community Option")
                 .font(.title)
                 .padding()
             
-            NavigationLink(destination: ClubsView()) {
-                Text("Join an Established Group")
+            NavigationLink(destination: SelectActivityView()) {
+                Text("Find a club near you!")
                     .padding()
                     .background(Color.orange)
                     .foregroundColor(.white)
@@ -23,23 +24,19 @@ struct CommunityOptionsView: View {
             }
             .padding()
             
-            Button(action: {
-                // Handle creating an exercise group
-            }) {
-                Text("Create an Exercise Group")
+            NavigationLink(destination: SelectActivityView()) {
+                Text("Find a Single Friend")
                     .padding()
-                    .background(Color.purple)
+                    .background(Color.red)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
             .padding()
             
-            Button(action: {
-                // Handle finding a single friend
-            }) {
-                Text("Find a Single Friend")
+            NavigationLink(destination: SelectActivityView()) {
+                Text("Create your own club")
                     .padding()
-                    .background(Color.red)
+                    .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }

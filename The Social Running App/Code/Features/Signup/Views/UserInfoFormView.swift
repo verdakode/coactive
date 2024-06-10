@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct UserInfoFormView: View {
-    @Binding var step: Int
     @Binding var name: String
     @Binding var dateOfBirth: Date
     @Binding var email: String
@@ -29,10 +28,9 @@ struct UserInfoFormView: View {
             .navigationBarTitle("", displayMode: .inline)
             
             if !name.isEmpty && !email.isEmpty && !phoneNumber.isEmpty {
-                Button(action: {
-                    step = 2
-                }) {
+                NavigationLink(destination: CommunityOptionsView()) {
                     Text("Next")
+                        .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -46,13 +44,12 @@ struct UserInfoFormView: View {
 
 
 struct UserInfoFormView_Previews: PreviewProvider {
-    @State static var step = 1
     @State static var name = ""
     @State static var dateOfBirth = Date()
     @State static var email = ""
     @State static var phoneNumber = ""
 
     static var previews: some View {
-        UserInfoFormView(step: $step, name: $name, dateOfBirth: $dateOfBirth, email: $email, phoneNumber: $phoneNumber)
+        UserInfoFormView(name: $name, dateOfBirth: $dateOfBirth, email: $email, phoneNumber: $phoneNumber)
     }
 }
