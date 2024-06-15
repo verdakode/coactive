@@ -25,7 +25,7 @@ let allClubs = [
 
 struct FeedView: View {
     var selectedActivities: [String]
-
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -44,7 +44,7 @@ struct FeedView: View {
                                 Image(club.imageName)
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(height: 300)
+                                    .frame(height: 400)
                                     .clipped()
                                     .cornerRadius(15)
                                     .overlay(
@@ -61,6 +61,16 @@ struct FeedView: View {
                                     Text("Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
                                 }
                                 .padding()
+                                
+                                NavigationLink(destination: GroupChatView(club: club)) {
+                                    Text("Meet the club")
+                                        .font(.headline)
+                                        .foregroundColor(.blue)
+                                        .padding()
+                                        .background(Color(.systemGray5))
+                                        .cornerRadius(10)
+                                }
+                                .padding([.top, .horizontal])
                             }
                             .background(Color(.secondarySystemBackground))
                             .cornerRadius(15)
@@ -75,7 +85,7 @@ struct FeedView: View {
     }
         
     func filteredClubs(for activity: String) -> [Club] {
-        allClubs.filter { $0.activity == activity && $0.location == "Nearby" }
+        allClubs.filter { $0.activity == activity }
     }
 }
 

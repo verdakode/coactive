@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09FBB7AECDB5C4975E389394 /* Pods_The_Social_Running_App_The_Social_Running_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEDE912A24D80B2BB4F9EAE /* Pods_The_Social_Running_App_The_Social_Running_AppUITests.framework */; };
+		33F4DD973974A92B31F66DA6 /* Pods_The_Social_Running_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F138C0BB5035E50946DF25 /* Pods_The_Social_Running_AppTests.framework */; };
 		560475442C16968E00607827 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560475432C16968E00607827 /* FeedView.swift */; };
+		5649590E2C1DFAAA005E61C1 /* GroupchatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649590D2C1DFAAA005E61C1 /* GroupchatView.swift */; };
+		564959112C1DFE06005E61C1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5649590F2C1DFE06005E61C1 /* Model.xcdatamodeld */; };
+		564959142C1DFE48005E61C1 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 564959132C1DFE48005E61C1 /* SQLite */; };
+		564959162C1DFE66005E61C1 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564959152C1DFE66005E61C1 /* DatabaseHelper.swift */; };
+		564959182C1E0AF0005E61C1 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564959172C1E0AF0005E61C1 /* UsersListView.swift */; };
+		5649591A2C1E0B10005E61C1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564959192C1E0B10005E61C1 /* UserViewModel.swift */; };
+		5649591C2C1E0BB7005E61C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649591B2C1E0BB7005E61C1 /* User.swift */; };
+		5649591E2C1E0C56005E61C1 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649591D2C1E0C56005E61C1 /* UserRepository.swift */; };
 		5678A28A2BF586FD004F1A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5678A2892BF586FD004F1A10 /* Assets.xcassets */; };
 		5678A28D2BF586FD004F1A10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5678A28C2BF586FD004F1A10 /* Preview Assets.xcassets */; };
 		5678A2972BF586FD004F1A10 /* The_Social_Running_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678A2962BF586FD004F1A10 /* The_Social_Running_AppTests.swift */; };
@@ -34,6 +44,7 @@
 		567C99D42C04EFC0004B7EE7 /* CommunityOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567C99D32C04EFC0004B7EE7 /* CommunityOptionsView.swift */; };
 		567C99D62C04FA33004B7EE7 /* UserInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567C99D52C04FA33004B7EE7 /* UserInfoFormView.swift */; };
 		567C99D92C0550B9004B7EE7 /* sampleProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567C99D82C0550B9004B7EE7 /* sampleProfiles.swift */; };
+		670713C797CAC2B150BF1FA3 /* Pods_The_Social_Running_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33C3B1739257A227B31511F /* Pods_The_Social_Running_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +65,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22D7E15CE83A2469C02322E3 /* Pods-The Social Running App-The Social Running AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Social Running App-The Social Running AppUITests.release.xcconfig"; path = "Target Support Files/Pods-The Social Running App-The Social Running AppUITests/Pods-The Social Running App-The Social Running AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3479E29338FE7774043441A2 /* Pods-The Social Running App-The Social Running AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Social Running App-The Social Running AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Social Running App-The Social Running AppUITests/Pods-The Social Running App-The Social Running AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		560475432C16968E00607827 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		5649590D2C1DFAAA005E61C1 /* GroupchatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupchatView.swift; sourceTree = "<group>"; };
+		564959102C1DFE06005E61C1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		564959152C1DFE66005E61C1 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		564959172C1E0AF0005E61C1 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		564959192C1E0B10005E61C1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		5649591B2C1E0BB7005E61C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5649591D2C1E0C56005E61C1 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		5678A2822BF586FC004F1A10 /* The Social Running App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Social Running App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5678A2892BF586FD004F1A10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5678A28C2BF586FD004F1A10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -84,6 +104,13 @@
 		567C99D32C04EFC0004B7EE7 /* CommunityOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityOptionsView.swift; sourceTree = "<group>"; };
 		567C99D52C04FA33004B7EE7 /* UserInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoFormView.swift; sourceTree = "<group>"; };
 		567C99D82C0550B9004B7EE7 /* sampleProfiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleProfiles.swift; sourceTree = "<group>"; };
+		5CE76CE48E2EE99EBF0D9032 /* Pods-The Social Running App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Social Running App.debug.xcconfig"; path = "Target Support Files/Pods-The Social Running App/Pods-The Social Running App.debug.xcconfig"; sourceTree = "<group>"; };
+		5EEDE912A24D80B2BB4F9EAE /* Pods_The_Social_Running_App_The_Social_Running_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Social_Running_App_The_Social_Running_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F79AE99A608C8FAB034B098 /* Pods-The Social Running AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Social Running AppTests.debug.xcconfig"; path = "Target Support Files/Pods-The Social Running AppTests/Pods-The Social Running AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4F138C0BB5035E50946DF25 /* Pods_The_Social_Running_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Social_Running_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA170E1EBD33574757174D60 /* Pods-The Social Running App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Social Running App.release.xcconfig"; path = "Target Support Files/Pods-The Social Running App/Pods-The Social Running App.release.xcconfig"; sourceTree = "<group>"; };
+		C33C3B1739257A227B31511F /* Pods_The_Social_Running_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Social_Running_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E21FD16D488B7C8BC8C1A4 /* Pods-The Social Running AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Social Running AppTests.release.xcconfig"; path = "Target Support Files/Pods-The Social Running AppTests/Pods-The Social Running AppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564959142C1DFE48005E61C1 /* SQLite in Frameworks */,
+				670713C797CAC2B150BF1FA3 /* Pods_The_Social_Running_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F4DD973974A92B31F66DA6 /* Pods_The_Social_Running_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,12 +135,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09FBB7AECDB5C4975E389394 /* Pods_The_Social_Running_App_The_Social_Running_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5037814899D4F42DBFEB8877 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CE76CE48E2EE99EBF0D9032 /* Pods-The Social Running App.debug.xcconfig */,
+				BA170E1EBD33574757174D60 /* Pods-The Social Running App.release.xcconfig */,
+				3479E29338FE7774043441A2 /* Pods-The Social Running App-The Social Running AppUITests.debug.xcconfig */,
+				22D7E15CE83A2469C02322E3 /* Pods-The Social Running App-The Social Running AppUITests.release.xcconfig */,
+				7F79AE99A608C8FAB034B098 /* Pods-The Social Running AppTests.debug.xcconfig */,
+				F4E21FD16D488B7C8BC8C1A4 /* Pods-The Social Running AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		560FC1062C0FEC3B00D03793 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +181,8 @@
 				5678A2842BF586FC004F1A10 /* The Social Running App */,
 				567C99BB2C04DC7A004B7EE7 /* Tests */,
 				5678A2832BF586FC004F1A10 /* Products */,
+				5037814899D4F42DBFEB8877 /* Pods */,
+				5F540F932D9315A2FC9C8F70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +270,11 @@
 				567C99D32C04EFC0004B7EE7 /* CommunityOptionsView.swift */,
 				567C99D12C04EF9D004B7EE7 /* SelectCoactivityView.swift */,
 				560475432C16968E00607827 /* FeedView.swift */,
+				5649590D2C1DFAAA005E61C1 /* GroupchatView.swift */,
+				564959172C1E0AF0005E61C1 /* UsersListView.swift */,
+				564959192C1E0B10005E61C1 /* UserViewModel.swift */,
+				5649591B2C1E0BB7005E61C1 /* User.swift */,
+				5649591D2C1E0C56005E61C1 /* UserRepository.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +299,7 @@
 			children = (
 				567C99B72C04DBB0004B7EE7 /* ContentView.swift */,
 				567C99B92C04DBC4004B7EE7 /* TheSocialRunningApp.swift */,
+				564959152C1DFE66005E61C1 /* DatabaseHelper.swift */,
 				5678A2892BF586FD004F1A10 /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
@@ -293,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				567C99A62C03A9D7004B7EE7 /* ProfileView.swift */,
+				5649590F2C1DFE06005E61C1 /* Model.xcdatamodeld */,
 				567C99A82C03B569004B7EE7 /* UserProfile.swift */,
 				567C99D72C05509E004B7EE7 /* Sample Data */,
 			);
@@ -307,6 +360,16 @@
 			path = "Sample Data";
 			sourceTree = "<group>";
 		};
+		5F540F932D9315A2FC9C8F70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C33C3B1739257A227B31511F /* Pods_The_Social_Running_App.framework */,
+				5EEDE912A24D80B2BB4F9EAE /* Pods_The_Social_Running_App_The_Social_Running_AppUITests.framework */,
+				A4F138C0BB5035E50946DF25 /* Pods_The_Social_Running_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -314,6 +377,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5678A2A62BF586FD004F1A10 /* Build configuration list for PBXNativeTarget "The Social Running App" */;
 			buildPhases = (
+				640422341953E28C348ED248 /* [CP] Check Pods Manifest.lock */,
 				5678A27E2BF586FC004F1A10 /* Sources */,
 				5678A27F2BF586FC004F1A10 /* Frameworks */,
 				5678A2802BF586FC004F1A10 /* Resources */,
@@ -323,6 +387,9 @@
 			dependencies = (
 			);
 			name = "The Social Running App";
+			packageProductDependencies = (
+				564959132C1DFE48005E61C1 /* SQLite */,
+			);
 			productName = "The Social Running App";
 			productReference = 5678A2822BF586FC004F1A10 /* The Social Running App.app */;
 			productType = "com.apple.product-type.application";
@@ -331,6 +398,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5678A2A92BF586FD004F1A10 /* Build configuration list for PBXNativeTarget "The Social Running AppTests" */;
 			buildPhases = (
+				409489471458A9D8E5C568FA /* [CP] Check Pods Manifest.lock */,
 				5678A28E2BF586FD004F1A10 /* Sources */,
 				5678A28F2BF586FD004F1A10 /* Frameworks */,
 				5678A2902BF586FD004F1A10 /* Resources */,
@@ -349,6 +417,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5678A2AC2BF586FD004F1A10 /* Build configuration list for PBXNativeTarget "The Social Running AppUITests" */;
 			buildPhases = (
+				F4061FFDB8059E3B2922D7D0 /* [CP] Check Pods Manifest.lock */,
 				5678A2982BF586FD004F1A10 /* Sources */,
 				5678A2992BF586FD004F1A10 /* Frameworks */,
 				5678A29A2BF586FD004F1A10 /* Resources */,
@@ -395,6 +464,9 @@
 				Base,
 			);
 			mainGroup = 5678A2792BF586FC004F1A10;
+			packageReferences = (
+				564959122C1DFE48005E61C1 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = 5678A2832BF586FC004F1A10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,12 +504,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		409489471458A9D8E5C568FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Social Running AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		640422341953E28C348ED248 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Social Running App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4061FFDB8059E3B2922D7D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Social Running App-The Social Running AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5678A27E2BF586FC004F1A10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				567C99C02C04DFB0004B7EE7 /* SwiftUIView.swift in Sources */,
+				564959182C1E0AF0005E61C1 /* UsersListView.swift in Sources */,
 				567C99D92C0550B9004B7EE7 /* sampleProfiles.swift in Sources */,
 				567C99B82C04DBB0004B7EE7 /* ContentView.swift in Sources */,
 				567C99A92C03B569004B7EE7 /* UserProfile.swift in Sources */,
@@ -448,16 +590,22 @@
 				5678A2B12BF588D8004F1A10 /* RunningGroup.swift in Sources */,
 				567C99A12BF6BF36004B7EE7 /* RunningGroupDetailView.swift in Sources */,
 				567C99BA2C04DBC4004B7EE7 /* TheSocialRunningApp.swift in Sources */,
+				564959112C1DFE06005E61C1 /* Model.xcdatamodeld in Sources */,
 				567C99C82C04E3CD004B7EE7 /* MatchDetailView.swift in Sources */,
 				567C99C22C04DFCD004B7EE7 /* MatchMeView.swift in Sources */,
 				567C99AD2C03BBB7004B7EE7 /* RunningMatch.swift in Sources */,
 				567C99D62C04FA33004B7EE7 /* UserInfoFormView.swift in Sources */,
 				567C99C62C04E383004B7EE7 /* RunningMatchView.swift in Sources */,
 				567C99C42C04E013004B7EE7 /* SampleGroupData.swift in Sources */,
+				5649591E2C1E0C56005E61C1 /* UserRepository.swift in Sources */,
+				5649590E2C1DFAAA005E61C1 /* GroupchatView.swift in Sources */,
+				5649591C2C1E0BB7005E61C1 /* User.swift in Sources */,
 				567C99D42C04EFC0004B7EE7 /* CommunityOptionsView.swift in Sources */,
 				567C99AF2C03C0B5004B7EE7 /* Match.swift in Sources */,
+				564959162C1DFE66005E61C1 /* DatabaseHelper.swift in Sources */,
 				567C99CA2C04E584004B7EE7 /* SampleRunningMatchData.swift in Sources */,
 				567C999F2BF6BEE6004B7EE7 /* ClubsView.swift in Sources */,
+				5649591A2C1E0B10005E61C1 /* UserViewModel.swift in Sources */,
 				567C99A52BF6C179004B7EE7 /* SampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +759,7 @@
 		};
 		5678A2A72BF586FD004F1A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE76CE48E2EE99EBF0D9032 /* Pods-The Social Running App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -639,6 +788,7 @@
 		};
 		5678A2A82BF586FD004F1A10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA170E1EBD33574757174D60 /* Pods-The Social Running App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -667,6 +817,7 @@
 		};
 		5678A2AA2BF586FD004F1A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F79AE99A608C8FAB034B098 /* Pods-The Social Running AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -686,6 +837,7 @@
 		};
 		5678A2AB2BF586FD004F1A10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E21FD16D488B7C8BC8C1A4 /* Pods-The Social Running AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -705,6 +857,7 @@
 		};
 		5678A2AD2BF586FD004F1A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3479E29338FE7774043441A2 /* Pods-The Social Running App-The Social Running AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -722,6 +875,7 @@
 		};
 		5678A2AE2BF586FD004F1A10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D7E15CE83A2469C02322E3 /* Pods-The Social Running App-The Social Running AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -777,6 +931,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		564959122C1DFE48005E61C1 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		564959132C1DFE48005E61C1 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 564959122C1DFE48005E61C1 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5649590F2C1DFE06005E61C1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				564959102C1DFE06005E61C1 /* Model.xcdatamodel */,
+			);
+			currentVersion = 564959102C1DFE06005E61C1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5678A27A2BF586FC004F1A10 /* Project object */;
 }

@@ -28,7 +28,7 @@ struct UserInfoFormView: View {
             .navigationBarTitle("", displayMode: .inline)
             
             if !name.isEmpty && !email.isEmpty && !phoneNumber.isEmpty {
-                NavigationLink(destination: CommunityOptionsView()) {
+                NavigationLink(destination: CommunityOptionsView().onAppear(perform: saveUser)) {
                     Text("Next")
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -39,6 +39,10 @@ struct UserInfoFormView: View {
                 .padding()
             }
         }
+    }
+    
+    private func saveUser() {
+        DatabaseHelper.shared.insertUser(name: name, dateOfBirth: dateOfBirth, email: email, phoneNumber: phoneNumber)
     }
 }
 

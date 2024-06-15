@@ -13,7 +13,7 @@ struct SignupView: View {
     @State private var email = ""
     @State private var phoneNumber = ""
     @State private var activity = ""
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -23,24 +23,34 @@ struct SignupView: View {
                     .frame(width: 100, height: 100)
                     .foregroundColor(.blue)
                     .padding(.top, 50)
-
+                
                 Text("Welcome to CoActive")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.top, 20)
-
+                
                 Text("Connect with people who love to exercise")
                     .font(.subheadline)
                     .padding(.top, 5)
                     .padding(.horizontal)
-
+                
                 Spacer()
-
+                
                 // User Info Form
                 UserInfoFormView(name: $name, dateOfBirth: $dateOfBirth, email: $email, phoneNumber: $phoneNumber)
                     .padding(.top, 30)
-
+                
                 Spacer()
+                
+                NavigationLink(destination: UsersListView()) {
+                    Text("View Saved Users")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding()
             }
             .padding()
         }
